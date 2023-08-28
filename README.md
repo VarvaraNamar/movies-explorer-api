@@ -32,4 +32,4 @@ https://varvaranamar.github.io/movies-explorer-api/
 
 ## Ccылка на pullrequest
 
--
+https://github.com/VarvaraNamar/movies-explorer-api/pull/1
