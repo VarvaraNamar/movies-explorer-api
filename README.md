@@ -18,7 +18,7 @@ Varvara Namar
 
 ## Установка и запуск проекта:
 
-Клонировать репозиторий: `git clone https://github.com/`
+Клонировать репозиторий: `git clone https://github.com/VarvaraNamar/movies-explorer-api.git`
 
 Установить зависимости: `npm install`
 
@@ -28,7 +28,7 @@ Varvara Namar
 
 ## Ccылка на репозиторий
 
--
+https://varvaranamar.github.io/movies-explorer-api/
 
 ## Ccылка на pullrequest
 
