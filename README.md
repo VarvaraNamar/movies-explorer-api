@@ -33,3 +33,8 @@ https://varvaranamar.github.io/movies-explorer-api/
 ## Ccылка на pullrequest
 
 https://github.com/VarvaraNamar/movies-explorer-api/pull/1
+
+## Ссылки на 
+фронтенд https://varvara.diplom.nomoredomainsicu.ru
+бэкенд https://api.varvara.diplom.nomoredomainsicu.ru
+апи 51.250.23.228
