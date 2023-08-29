@@ -3,9 +3,6 @@ const jwt = require('jsonwebtoken');
 // Подключение статусов ошибок:
 const UnauthorizedErr = require('../errors/UnauthorizedErr');
 
-// Вывод сообщений об ошибках:
-const { AUTHORIZATION_ERROR } = require('../utils/messegeConstants');
-
 const { SECRET_KEY_DEVELOPMENT } = require('../utils/constants');
 
 const { NODE_ENV, SECRET_KEY } = process.env;
@@ -16,7 +13,7 @@ module.exports = (req, res, next) => {
 
   // Проверяем наличие и формат заголовка для авторизации пользователя:
   if (!authorization || !authorization.startsWith('Bearer')) {
-    throw new UnauthorizedErr(AUTHORIZATION_ERROR);
+    throw new UnauthorizedErr('Необходима авторизация!');
   }
 
   const token = authorization.replace('Bearer ', '');
@@ -29,7 +26,7 @@ module.exports = (req, res, next) => {
       NODE_ENV === 'production' ? SECRET_KEY : SECRET_KEY_DEVELOPMENT,
     );
   } catch (err) {
-    next(new UnauthorizedErr(AUTHORIZATION_ERROR));
+    next(new UnauthorizedErr('Необходима авторизация!'));
     return;
   }
   // Присваиваем расшифрованные данные токена в объект запроса
